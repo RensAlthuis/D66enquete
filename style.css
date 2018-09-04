@@ -1,0 +1,80 @@
+body{
+	background-color: darkgray;
+}
+
+table{
+	margin:0px;
+}
+
+#title{
+	font-size: 30px;
+	text-align: left;
+	display:block;
+	padding-left:10px;
+}
+
+#content{
+	background-color: white;
+	margin: auto;
+	width: 70%;
+	border: 3px solid rgb(83, 142, 195);
+	padding: 20px;
+}
+
+#vraag{
+	text-align: left;
+}
+#sliderlist{
+	margin: auto;
+	width: 90%;
+}
+
+#sliderlist ul{
+	list-style-type: none;
+}
+
+#sliders{
+	margin:0px;
+	padding:0px;
+}
+
+.slider{
+	margin-bottom: 5px;
+	margin-left: 0px; 
+	background-color:rgb(227, 120, 47) ;
+	
+}
+.ui-widget-header{
+	background-color:rgb(83, 142, 195);
+}
+
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+li{
+	padding:0px;
+	margin:30px;
+	padding-bottom:15px;
+	border-width: 2px;
+	border-color: grey;
+	border-bottom-style: solid;
+}
+
+li p{
+	margin-top:0px;
+}
+
+#over span{
+	color:rgb(83, 142, 195);
+}
+
+#send{
+	text-align: right;
+	padding-right: 30px;
+}

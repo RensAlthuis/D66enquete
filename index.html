@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="jquery-ui.min.css">
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script src="jquery.ui.touch-punch.min.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="content">
+		<table>
+			<th>
+				<img src="icon.png">
+				<th>
+					<span id="title">
+						Enquete over rechtvaardige inkomensverdeling
+					</span>
+				</th>
+		</table>
+		<br/>
+		<p id="vraag">
+			<b>Welke aspecten zijn bepalend voor de hoogte van inkomen uit loon?
+				<br/>
+				<br/> Verdeel hieronder 100% over de 6 opties.</b>
+			<br/>
+			<br/>
+			<span id='over'>Je hebt nog
+				<span>100%</span> te verdelen.</span>
+		</p>
+		<div id='sliderlist'>
+			<ul id="sliders">
+				<li>
+					<p>Opleiding, ervaring, vakkennis, leeftijd</p>
+					<div>
+						<div class="slider">
+							<div id="custom-handle" class="ui-slider-handle"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>Werkomstandigheden: onaangenaam, gevaarlijk, werkrooster, financieel risico, variabele inkomsten</p>
+					<div>
+						<div class="slider">
+							<div id="custom-handle" class="ui-slider-handle">0</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>Inzet, kwaliteit geleverd werk, opbrengst productie, winstgevendheid werkgever</p>
+					<div>
+						<div class="slider">
+							<div id="custom-handle" class="ui-slider-handle"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>Schaarste op de arbeidsmarkt (vraag en aanbod)</p>
+					<div>
+						<div class="slider">
+							<div id="custom-handle" class="ui-slider-handle"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>Verantwoordelijkheid, leiding geven</p>
+					<div>
+						<div class="slider">
+							<div id="custom-handle" class="ui-slider-handle"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>Behoefte (aantal mensen afhankelijk van inkomen, kosten levensonderhoud)</p>
+					<div>
+						<div class="slider">
+							<div id="custom-handle" class="ui-slider-handle"></div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div id="send">
+				<button id="sendButton">Verzenden</button>
+			</div>
+
+		</div>
+		<script src="sliders.js"></script>
+	</div>
+
+</body>
+
+</html>
