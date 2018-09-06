@@ -24,6 +24,9 @@ table{
 #vraag{
 	text-align: left;
 }
+#antwoord{
+	padding-left : 20px;
+}
 #sliderlist{
 	margin: auto;
 	width: 90%;
@@ -70,8 +73,8 @@ li p{
 	margin-top:0px;
 }
 
-#over span{
-	color:rgb(83, 142, 195);
+#procentNummer{
+	color:#538EC3;
 }
 
 #send{

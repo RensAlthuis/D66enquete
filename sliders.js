@@ -11,7 +11,7 @@ sliders.each(function() {
         step: 2,
         animate: 100,
         create: function() {
-            $("#custom-handle", this).text( $( this ).slider( "value" ) );
+            $("#custom-handle", this).text( $( this ).slider( "value" ) + "%");
         },
         slide: function(event, ui) {
 
@@ -20,6 +20,13 @@ sliders.each(function() {
             sliders.not(this).each(function() {
                 total += $(this).slider("option", "value");
             });    
+	    if(total + ui.value < 100){
+		$('#procentNummer').css('color', '#538EC3');
+		$('#procentNummer').css('font-weight', 'normal');
+	    }else{
+		$('#procentNummer').css('color', 'red');
+		$('#procentNummer').css('font-weight', 'bold');
+	    }
 
             var available = maximum - total;            
 
@@ -37,17 +44,28 @@ sliders.each(function() {
 });
 
 $("#sendButton").click(function (){
+	var total = 0;
+	var comment = $("#comment").val();
+	sliders.each(function() {
+		total += $(this).slider("option", "value");
+	});    
+	if(total < 100){
+		alert("U heeft nog niet alle 100% verdeeld!");
+		return;
+	}
 	var values = [];
 	var i = 0;
 	sliders.each(function() {
 		values[i] = $(this).slider("option", "value");
 		i = i + 1;
 	});
+
 	$.ajax({
 		url: "Send.php",
 		type: "post",
-		data: {val: values},
+		data: {val: values, text: comment},
 		success: function(result){
+			window.location.href = "bedankt.html";
 			console.log(result);
 		},
 		error: function(err){

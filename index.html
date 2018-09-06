@@ -19,19 +19,21 @@
 				<img src="icon.png">
 				<th>
 					<span id="title">
-						Enquete over rechtvaardige inkomensverdeling
+						Enquete Rechtvaardige Inkomensverdeling
 					</span>
 				</th>
 		</table>
 		<br/>
 		<p id="vraag">
-			<b>Welke aspecten zijn bepalend voor de hoogte van inkomen uit loon?
+			<b>Welke criteria moeten de hoogte van het inkomen uit loon bepalen?
 				<br/>
-				<br/> Verdeel hieronder 100% over de 6 opties.</b>
+				<br/> Verdeel 100% over de 6 opties door de onderstaande getallen heen en weer te schuiven.
+			</b>
 			<br/>
 			<br/>
 			<span id='over'>Je hebt nog
-				<span>100%</span> te verdelen.</span>
+				<span id="procentNummer">100%</span> te verdelen.
+			</span>
 		</p>
 		<div id='sliderlist'>
 			<ul id="sliders">
@@ -82,6 +84,12 @@
 							<div id="custom-handle" class="ui-slider-handle"></div>
 						</div>
 					</div>
+				</li>
+				<li>
+					<p>
+					Hier kun je optioneel een opmerking van maximaal 200 tekens invoeren.</br>
+					</p>
+					<textarea maxlength=200 id="comment" cols=60 rows=8></textarea>
 				</li>
 			</ul>
 			<div id="send">
